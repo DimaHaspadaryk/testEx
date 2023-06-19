@@ -38,7 +38,7 @@ public class Scoreboard {
                 inProgressMatches.add(match);
             }
 
-            // Sort by total score (descending) and then by start time (ascending)
+            
             inProgressMatches.sort(Comparator.comparingInt(Match::getTotalScore).reversed()
                     .thenComparingInt(matches::indexOf));
 
