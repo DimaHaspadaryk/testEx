@@ -32,17 +32,17 @@ public class Scoreboard {
         }
         return null;
     }
-//        public List<Match> getGamesInProgressOrderedByTotalScore () {
-//            List<Match> inProgressMatches = new ArrayList<>();
-//            for (Match match1 : matches) {
-//                inProgressMatches.add(match);
-//            }
-//
-//            // Sort by total score (descending) and then by start time (ascending)
-//            inProgressMatches.sort(Comparator.comparingInt(Match::getTotalScore).reversed()
-//                    .thenComparingInt(matches::indexOf));
-//
-//            return inProgressMatches;
+        public List<Match> getGamesInProgressOrderedByTotalScore () {
+            List<Match> inProgressMatches = new ArrayList<>();
+            for (Match match1 : matches) {
+                inProgressMatches.add(match);
+            }
+
+            // Sort by total score (descending) and then by start time (ascending)
+            inProgressMatches.sort(Comparator.comparingInt(Match::getTotalScore).reversed()
+                    .thenComparingInt(matches::indexOf));
+
+            return inProgressMatches;
 
 
 
